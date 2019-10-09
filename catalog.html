@@ -20,8 +20,19 @@
           </ul>
           <ul>
               <li><a href="#">Каталог товаров</a>
-                <ul class="submenu">
-                  <li></li>
+                <ul class="submenu submenu-hidden">
+                  <ul class="">
+                    <li><a>Виртуальная реальность</a></li>
+                    <li><a>Моноподы для селфи</a></li>
+                    <li><a>Экшн-камеры</a></li>
+                  </ul>
+                  <ul class="">
+                    <li><a>Фитнес-браслеты</a></li>
+                    <li><a>Умные часы</a></li>
+                  </ul>
+                  <ul class="">
+                    <li><a>Квадракоптер</a></li>
+                  </ul>
                 </ul>
               </li>
               <li><a href="#">Доставка</a></li>
@@ -37,26 +48,50 @@
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li>Моноподы для селфи</li>
        </ul>
-       <section class="catalog">
-        <h2>фильтр товаров</h2>
-        <!--Будет форма-->
-        <p>
-          <b>Цвет</b>
-          <ul>
-            <li><input type="checkbox">Черный</li>
-            <li><input type="checkbox">Белый</li>
-            <li><input type="checkbox">Синий</li>
-            <li><input type="checkbox">Красный</li>
-            <li><input type="checkbox">Розовый</li>
-          </ul>
-        </p>
-        <p>
-          <b>Bluetooth</b>
-          <ul>
-              <li><input type="radio" id="yes">Есть</li>
-              <li><input type="radio" id="no">Нет</li>
-          </ul>
-        </p>
+       <section class="filters">
+          <h2 class="visually-hidden" >фильтр товаров</h2>
+          <!--Будет форма-->
+          <form class="filter" method="GET" accept="">
+            <fieldset>            
+                <legend>Цвет</legend>
+                <ul>
+                    <li>
+                      <input id="filter-black" value="black" type="checkbox" name="">
+                       <label for="filter-black">Черный</label>
+                    </li>
+                    <li>
+                      <input id="filter-white" value="white" type="checkbox" name="">
+                      <label for="filter-white">Белый</label>
+                    </li>
+                    <li>
+                      <input id="filter-blue" value="blue" type="checkbox" name="">
+                      <label for="filter-blue">Синий</label>
+                    </li>
+                    <li>
+                      <input id="filter-red" value="red" type="checkbox" name="">
+                      <label for="filter-red">Красный</label>
+                    </li>
+                    <li>
+                      <input id="filter-pink" value="pink" type="checkbox" name="">
+                      <label for="filter-pink">Розовый</label>
+                    </li>
+                </ul>            
+            </fieldset>
+            <fieldset>
+                <legend>Bluetooth</legend>
+                <ul>
+                    <li>
+                      <input  type="radio" id="filter-yes" value="yes" name="product-group">
+                      <label for="filter-yes">Есть</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="filter-no" value="no" name="product-group">
+                      <label for="filter-no">Нет</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit" class="filter-button button" >Показать</button>
+        </form>
       </section>
       <section class="catalog">
         <h2>Список моноподов</h2>

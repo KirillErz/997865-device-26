@@ -1,96 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-          <a class="main-header-logo" href="index.html">
-              <img src="img/svg/logo.svg"   alt="Логотип Магазина DEVICE">
-           </a>
-           <span>Поиск по сайту</span>>          
-          <ul class="user-block">
-              <li><a href="#">Имя</a></li>
-              <li><a href="#">Войти</a></li>
-              <li><a href="#">Выйти</a></li>                            
-              <li><a href="#">Сравнить</a></li>
-              <li><a href="#">Корзина</a></li>            
-          </ul>
-          <ul>
-              <li><a href="catalog.html">Каталог товаров</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Контакты</a></li>
-          </ul>  
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h3>
-           О нас
-        </h3>
-        <p>
-          Огромный выбор гаджетов не оставит равнодушным гика,<br> 
-          который есть в каждом из нас.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки<br>
-           России! DEVICE работает со многими транспортными компаниями:
-        </p>
-        <ul>
-          <li><b>Деловые Линии</b></li>
-          <li><b>Автотрейдинг</b></li>
-          <li><b>ЖелДорЭкспедиция</b></li>
-        </ul>
-        <h5><a href="#"><b>подробнее о нас</b></a></h5>
-      </section>
-      <section>
-        <h3>Контакты</h3>
-        <p>
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
-           проверить работоспособность покупки. Всякое бывает.
-        </p>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="main-header-logo" href="index.html">
+        <img src="img/svg/logo.svg" alt="Логотип Магазина DEVICE">
+      </a>
+      <span>Поиск по сайту</span>>
+      <ul class="user-block">
+        <li><a href="#">Имя</a></li>
+        <li><a href="login.html">Войти</a></li>
+        <li><a href="#">Выйти</a></li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+      <ul>
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+      
+    <section class="modal-map">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <p>
+        <img src="" alt="">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <section>      
+      <h3>
+        О нас
+      </h3>
+      <p>
+        Огромный выбор гаджетов не оставит равнодушным гика,<br>
+        который есть в каждом из нас.
+      </p>
+      <p>
+        Мы можем доставить ваш товар в самые отдаленные точки<br>
+        России! DEVICE работает со многими транспортными компаниями:
+      </p>
+      <ul>
+        <li><b>Деловые Линии</b></li>
+        <li><b>Автотрейдинг</b></li>
+        <li><b>ЖелДорЭкспедиция</b></li>
+      </ul>
+      <h5><a href="#"><b>подробнее о нас</b></a></h5>
+    </section>
+    <section class="modal modal-writetous">
+        <h2 class="visually-hidden">Напишите нам</h2>    
+          <button class="button-close"></button>
+          <form action="">
+            <p class="">
+              <label for="client-name"></label>
+              <input id="client-name" type="text" name="" value="name" placeholder="Имя Фамилия">
+            </p>
+            <p class="">
+              <label for="client-mail"></label>
+              <input id="client-mail" type="text" name="" value="mail" placeholder="email@example.com">
+            </p>
+            <p class="">
+              <label for="client-letter"></label>
+              <input id="client-letter" type="text" name="" value="letter" placeholder="В свободной форме">
+            </p>
+            <button class="button" type="submit">отправить</button>
+          </form>
+    </section>
+    <section>
+      <h3>Контакты</h3>
+      <p>
+        Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
+        проверить работоспособность покупки. Всякое бывает.
+      </p>
+      <span>
+        <img src="img/map.jpg">
+      </span>
+      <h5><a href="#"><b>Напишите нам</b></a></h5>
+    </section>
+  </main>
+  <footer>
+    <p class="footer-contacts">
+      <span>
+        <a class="main-header-logo" href="index.html">
+          <img src="img/svg/logo.svg" width="111" height="24" alt="Логотип Магазина DEVICE">
+        </a>
+      </span>
+      г. Москва, ул. Строителей, 15
+      <span>
+      </span>
+    </p>
+    <div>
+      <ul>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><img src="img/svg/insta.svg">facebook</a></li>
+        <li><a href="#"><img src="img/svg/twiter.svg">instagram</a></li>
+        <li><a href="#"><img src="img/svg/facebook.svg">Vconacte</a></li>
+      </ul>
+    </div>
+    <section>
+      <ul>
+        <li><a href="#">Войти</a></li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+        <p>Тел. +7(495)495-95-95</p>
         <span>
-          <img src="img/map.jpg">
+          <img src="img/svg/logo-html.svg">
         </span>
-        <h5><a href="#"><b>Напишите нам</b></a></h5>
-      </section>
-    </main>
-    <footer>
-        <p class="footer-contacts">
-          <span>
-              <a class="main-header-logo" href="index.html">
-                  <img src="img/svg/logo.svg" width="111" height="24" alt="Логотип Магазина DEVICE">
-               </a>
-          </span>
-          г. Москва, ул. Строителей, 15
-          <span>
-          </span>
-        </p>
-        <div>
-          <ul>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          <ul>
-            <li><a href="#"><img src="img/svg/insta.svg">facebook</a></li>
-            <li><a href="#"><img src="img/svg/twiter.svg">instagram</a></li>
-            <li><a href="#"><img src="img/svg/facebook.svg">Vconacte</a></li>
-          </ul>
-        </div>
-        <section>
-          <ul>
-            <li><a href="#">Войти</a></li>
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
-          <p>Тел. +7(495)495-95-95</p>
-            <span>
-                <img src="img/svg/logo-html.svg">
-            </span>
-        </section>
-    </footer>
-  </body>
+    </section>
+  </footer>
+</body>
+
 </html>
