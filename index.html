@@ -5,17 +5,20 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
 </head>
-
 <body>
   <header>
     <nav>
       <a class="main-header-logo" href="index.html">
         <img src="img/svg/logo.svg" alt="Логотип Магазина DEVICE">
       </a>
+      <form method="POST" action="https://echo.htmlacademy.ru">
+        <input placeholder="Поиск по сайту" type="text" value="search">
+        <button class="button button-search" type="submit"></button>
+      </form>
       <span>Поиск по сайту</span>>
       <ul class="user-block">
         <li><a href="#">Имя</a></li>
-        <li><a href="login.html">Войти</a></li>
+        <li><a href="#">Войти</a></li>
         <li><a href="#">Выйти</a></li>
         <li><a href="#">Сравнить</a></li>
         <li><a href="#">Корзина</a></li>
@@ -28,12 +31,11 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
-      
+  <main class="container">  
     <section class="modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <p>
-        <img src="" alt="">
+        <img src="img/map.jpg" alt="Карта">
       </p>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
@@ -50,16 +52,16 @@
         России! DEVICE работает со многими транспортными компаниями:
       </p>
       <ul>
-        <li><b>Деловые Линии</b></li>
-        <li><b>Автотрейдинг</b></li>
-        <li><b>ЖелДорЭкспедиция</b></li>
+        <li>Деловые Линии</li>
+        <li>Автотрейдинг</li>
+        <li>ЖелДорЭкспедиция</li>
       </ul>
-      <h5><a href="#"><b>подробнее о нас</b></a></h5>
+      <a href="#">подробнее о нас</a>
     </section>
     <section class="modal modal-writetous">
         <h2 class="visually-hidden">Напишите нам</h2>    
           <button class="button-close"></button>
-          <form action="">
+          <form method="POST" action="https://echo.htmlacademy.ru">
             <p class="">
               <label for="client-name"></label>
               <input id="client-name" type="text" name="" value="name" placeholder="Имя Фамилия">
@@ -84,19 +86,15 @@
       <span>
         <img src="img/map.jpg">
       </span>
-      <h5><a href="#"><b>Напишите нам</b></a></h5>
+      <a href="#">Напишите нам</a>
     </section>
   </main>
   <footer>
-    <p class="footer-contacts">
-      <span>
+    <p class="footer-contacts">      
         <a class="main-header-logo" href="index.html">
-          <img src="img/svg/logo.svg" width="111" height="24" alt="Логотип Магазина DEVICE">
+          <img src="img/svg/logo.svg"  alt="Логотип Магазина DEVICE">
         </a>
-      </span>
-      г. Москва, ул. Строителей, 15
-      <span>
-      </span>
+      г. Москва, ул. Строителей, 15 
     </p>
     <div>
       <ul>
@@ -115,10 +113,12 @@
         <li><a href="#">Войти</a></li>
         <li><a href="#">Сравнить</a></li>
         <li><a href="#">Корзина</a></li>
-        <p>Тел. +7(495)495-95-95</p>
-        <span>
+      </ul>
+        <p>
+          Тел. +7(495)495-95-95        
           <img src="img/svg/logo-html.svg">
-        </span>
+        </p>
+        
     </section>
   </footer>
 </body>
