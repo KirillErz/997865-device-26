@@ -4,34 +4,58 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">  
 </head>
-<body>
-  <header>
-    <nav>
+
+<body class="main-page">
+  <header class="main-header">
+    <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/svg/logo.svg" alt="Логотип Магазина DEVICE">
       </a>
-      <form method="POST" action="https://echo.htmlacademy.ru">
-        <input placeholder="Поиск по сайту" type="text" value="search">
+      <form class="" method="GET" action="https://echo.htmlacademy.ru">
+        <input class=" input " placeholder="Поиск по сайту" type="text" value="search">
         <button class="button button-search" type="submit"></button>
       </form>
-      <span>Поиск по сайту</span>>
-      <ul class="user-block">
-        <li><a href="#">Имя</a></li>
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Выйти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+      <ul class="user-nav-list">
+        <li class="user-nav-list-item"><a href="#">Имя</a></li>
+        <li class="user-nav-list-item"><a href="#">Войти</a></li>
+        <li class="user-nav-list-item"><a href="#">Выйти</a></li>
+        <li class="user-nav-list-item"><a href="#">Сравнить</a></li>
+        <li class="user-nav-list-item"><a href="#">Корзина</a></li>
       </ul>
-      <ul>
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+      <ul class="main-navigation">
+        <li class="main-navigation-item"><a href="#">Каталог товаров</a>
+          <ul class="submain-catalog">
+            <li class="submain-catalog-item">
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li class="submain-catalog-item">
+              <ul class="">
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+            </li> 
+            <li class="submain-catalog-item">
+               <ul class="">
+                 <li><a href="#">Квадракоптер</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="main-navigation-item"><a  href="#">Доставка</a></li>
+        <li class="main-navigation-item"><a  href="#">Гарантия</a></li>
+        <li class="main-navigation-item"><a  href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
-  <main class="container">  
+  <main class="container">
     <section class="modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <p>
@@ -39,7 +63,7 @@
       </p>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <section>      
+    <section>
       <h3>
         О нас
       </h3>
@@ -59,23 +83,23 @@
       <a href="#">подробнее о нас</a>
     </section>
     <section class="modal modal-writetous">
-        <h2 class="visually-hidden">Напишите нам</h2>    
-          <button class="button-close"></button>
-          <form method="POST" action="https://echo.htmlacademy.ru">
-            <p class="">
-              <label for="client-name"></label>
-              <input id="client-name" type="text" name="" value="name" placeholder="Имя Фамилия">
-            </p>
-            <p class="">
-              <label for="client-mail"></label>
-              <input id="client-mail" type="text" name="" value="mail" placeholder="email@example.com">
-            </p>
-            <p class="">
-              <label for="client-letter"></label>
-              <input id="client-letter" type="text" name="" value="letter" placeholder="В свободной форме">
-            </p>
-            <button class="button" type="submit">отправить</button>
-          </form>
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <button class="button-close"></button>
+      <form method="POST" action="https://echo.htmlacademy.ru">
+        <p class="">
+          <label for="client-name"></label>
+          <input id="client-name" type="text" name="" value="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="">
+          <label for="client-mail"></label>
+          <input id="client-mail" type="text" name="" value="mail" placeholder="email@example.com">
+        </p>
+        <p class="">
+          <label for="client-letter"></label>
+          <input id="client-letter" type="text" name="" value="letter" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">отправить</button>
+      </form>
     </section>
     <section>
       <h3>Контакты</h3>
@@ -90,11 +114,11 @@
     </section>
   </main>
   <footer>
-    <p class="footer-contacts">      
-        <a class="main-header-logo" href="index.html">
-          <img src="img/svg/logo.svg"  alt="Логотип Магазина DEVICE">
-        </a>
-      г. Москва, ул. Строителей, 15 
+    <p class="footer-contacts">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/svg/logo.svg" alt="Логотип Магазина DEVICE">
+      </a>
+      г. Москва, ул. Строителей, 15
     </p>
     <div>
       <ul>
@@ -114,11 +138,11 @@
         <li><a href="#">Сравнить</a></li>
         <li><a href="#">Корзина</a></li>
       </ul>
-        <p>
-          Тел. +7(495)495-95-95        
-          <img src="img/svg/logo-html.svg">
-        </p>
-        
+      <p>
+        Тел. +7(495)495-95-95
+        <img src="img/svg/logo-html.svg">
+      </p>
+
     </section>
   </footer>
 </body>
