@@ -93,6 +93,7 @@ li{
 .container {
 
 }
+/*О нас*/
 .about-us {
    
 }
@@ -128,6 +129,74 @@ li{
     
 }
 
+/*Контакты*/
+
+.contacts {
+
+}
+.contacts h2 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: bold;
+    color: #000;
+}
+
+.contacts p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+}
+
+.contacts a {  
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight:bold;
+    color: #000;
+    text-decoration: line-through yellow;
+    
+}
+/*Подвал*/
+.main-footer {
+    background-color: #464646;
+    max-height: 323px;
+}
+
+.contacts-footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #ffffff;
+}
+.centre-footer {
+
+}
+.menu-footer {
+
+}
+.menu-footer a {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight:bold;
+    color: #ffffff;
+}
+/* социальные сети*/
+.social-footer {
+
+}
+/* меню пользователя*/
+.user-menu-footer {
+
+}
+.user-menu-footer a, p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    color: #ffffff;
+}
 /* модальное окно*/
 .modal-map {
     display: none;
@@ -136,5 +205,69 @@ li{
     display: none;
 }
 
-/* MAIN*/
+/*Catalog*/
+.main-catalog h1{
+    font-family: 'Gilroy', sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    font-weight:bold;
+    color: #000;
+}
+.breadcrumb a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000033;
+}
 
+/* Фильтр*/
+ .filter-color legend {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight:bold;
+    color: #000;
+ }
+ .filter-color label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    color: #000;
+ }
+
+ .filter-bluetooth legend {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight:bold;
+    color: #000;
+ }
+ .filter-bluetooth label {
+
+ }
+.catalog-header {
+
+   font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    color: #000;
+}
+.filters button {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    font-weight:bold;
+    color: #000;
+} 
+/* карточкм каталога*/
+.good-item h3 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight:bold;
+    color: #000;
+}
+
+.catalog-footer {
+    background-color: #464646;
+    max-height: 323px;
+}
