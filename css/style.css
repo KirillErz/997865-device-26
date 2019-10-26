@@ -41,9 +41,24 @@ li{
 .main-header{
    
 }
+/* кнопка с зачеркиванием*/
+.btn-line-through {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight:bold;
+    color: #000;
+    text-decoration: line-through yellow;
+}
+
 /* MENU*/
-.main-navigation{
+nav {
     background-color: #f7e296;
+}
+nav li {
+    margin: 0;
+    padding: 0;
+
 }
 .main-header-logo{
 
@@ -60,13 +75,22 @@ li{
 .user-nav-list{
 
 }
-.user-nav-list a{
+.user-nav-list a {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 30px;
-    font-weight: normal;
+    font-weight: 400;
     color: #000;
 }
+.user-nav-list a:hover,:focus
+{ 
+    opacity: 0.6;
+}
+.user-nav-list a:active
+{ 
+    opacity: 0.3;
+}
+
 .user-nav-list-item{
 
 }
@@ -119,15 +143,7 @@ li{
     color: #000;
     list-style-type: circle;
 }
-.about-us a {  
-    font-family: 'Gilroy', sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight:bold;
-    color: #000;
-    text-decoration: line-through yellow;
-    
-}
+
 
 /*Контакты*/
 
@@ -149,19 +165,10 @@ li{
     color: #464646;
 }
 
-.contacts a {  
-    font-family: 'Gilroy', sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight:bold;
-    color: #000;
-    text-decoration: line-through yellow;
-    
-}
+
 /*Подвал*/
 .main-footer {
     background-color: #464646;
-    max-height: 323px;
 }
 
 .contacts-footer {
@@ -252,11 +259,8 @@ li{
     line-height: 40px;
     color: #000;
 }
-.filters button {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 18px;
-    font-weight:bold;
-    color: #000;
+.filter-button {
+  
 } 
 /* карточкм каталога*/
 .good-item h3 {
