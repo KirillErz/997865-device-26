@@ -16,6 +16,13 @@
     src: url("../device/fonts/web/opensans.woff") format("woff");
   }
 
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -38,9 +45,7 @@ li{
 .main-page {
     
 }
-.main-header{
-   
-}
+
 /* кнопка с зачеркиванием*/
 .btn-line-through {
     font-family: 'Gilroy', sans-serif;
@@ -48,20 +53,87 @@ li{
     line-height: 24px;
     font-weight:bold;
     color: #000;
-    text-decoration: line-through yellow;
+}
+.btn-line-through::before {
+    content: "подробнее о нас";   
+    height: 8px;
+    width: inherit;
+    display: inline-block;
+    background-color: #ffcc33; 
 }
 
 /* MENU*/
-nav {
+.main-header {
+    /* Временно для сетки  */
+     min-height: 340px;
+ }
+.main-navigation {
+    display: flex;
+    width: 1160px;
+    padding-left: 60px;
+    padding-right: 60px;
+    flex-direction: column;
+    
+    margin-top: 21px;
+    margin-left: auto;
+    margin-right: auto;
+
+    min-height: 320px;
     background-color: #f7e296;
 }
-nav li {
+ .main-header-logo {
+    width: 165px;
+    height: 36px;
+    /* Временно для сетки  */
+    display: block;
+ }
+ .main-search {
+     /* Временно для сетки  */
+     width: 540px;
+     min-height: 30px;
+ }
+ .user-navigation {
+    width: 500px;
+    margin: 0px;
+    padding: 0px;
+
+    list-style: none;
+    /* Временно для сетки  */
+    min-height: 30px;
+ }
+
+
+.user-navigation-wrapper {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .user-navigation-wrapper .user-navigation {
+     display: flex;
+     justify-content: space-between;
+ }
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
+    list-style: none;
 
+    /* Временно для сетки  */
+    min-height: 150px;
 }
-.main-header-logo{
-
+.main-navigation-item:nth-child(1) {
+    width: 540px;
+}
+.main-navigation-item:nth-child(2) {
+    width: 160px;
+}
+.main-navigation-item:nth-child(3) {
+    width: 220px;
+}
+.main-navigation-item:nth-child(4) {
+    width: 120px;
 }
 .input-search{
     font-family: 'Open Sans', sans-serif;
@@ -72,31 +144,38 @@ nav li {
 .button-search{
 
 }
-.user-nav-list{
 
-}
-.user-nav-list a {
+.user-navigation a {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
     color: #000;
 }
-.user-nav-list a:hover,:focus
+.user-navigation a:hover,:focus
 { 
     opacity: 0.6;
 }
-.user-nav-list a:active
+.user-navigation a:active
 { 
     opacity: 0.3;
 }
-
-.user-nav-list-item{
+.catalog-header a:hover,:focus {
+    opacity: 0.6;
+}
+.catalog-header a:active {
+    opacity: 0.3;
+}
+.site-navigation a:hover,:focus {
+    opacity: 0.6;
+}
+.site-navigation a:active {
+    opacity: 0.3;
+}
+.user-navigation-item{
 
 }
-.main-navigation{
 
-}
 .main-navigation-item a {
     font-family: 'Gilroy', sans-serif;
     font-size: 18px;
@@ -115,7 +194,9 @@ nav li {
 /* MAIN*/
 
 .container {
-
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 /*О нас*/
 .about-us {
@@ -167,7 +248,7 @@ nav li {
 
 
 /*Подвал*/
-.main-footer {
+footer {
     background-color: #464646;
 }
 
@@ -190,10 +271,29 @@ nav li {
     font-weight:bold;
     color: #ffffff;
 }
+.centre-footer a:hover,:focus {
+    opacity: 0.6;
+}
+.centre-footer  a:active {
+    opacity: 0.3;
+}
+.user-menu-footer a:hover,:focus {
+    opacity: 0.6;
+}
+.user-menu-footer  a:active {
+    opacity: 0.3;
+}
+.footer-logo-catalog:hover,:focus {
+    opacity: 0.6;
+}
+.footer-logo-catalog:active {
+    opacity: 0.3;
+}
 /* социальные сети*/
 .social-footer {
 
 }
+
 /* меню пользователя*/
 .user-menu-footer {
 
@@ -210,6 +310,19 @@ nav li {
 }
 .modal-writetous {
     display: none;
+    color: #ffffff;
+    width: 960px;
+    height: 550px;
+}
+.modal-writetous label {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight:bold;
+    color: #000;
+}
+.modal-writetous .button-close {
+    
 }
 
 /*Catalog*/
@@ -269,9 +382,4 @@ nav li {
     line-height: 24px;
     font-weight:bold;
     color: #000;
-}
-
-.catalog-footer {
-    background-color: #464646;
-    max-height: 323px;
 }

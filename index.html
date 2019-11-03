@@ -11,22 +11,24 @@
 
 <body class="main-page">
   <header class="main-header">
-    <nav>
+    <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/svg/logo.svg" alt="Логотип Магазина DEVICE">
       </a>
-      <form class="" method="GET" action="https://echo.htmlacademy.ru">
-        <input class="input-search" placeholder="Поиск по сайту" type="text" value="search">
-        <button class="button button-search" type="submit"></button>
-      </form>
-      <ul class="user-nav-list">
-        <li class="user-nav-list-item"><a href="#">Имя</a></li>
-        <li class="user-nav-list-item"><a href="#">Войти</a></li>
-        <li class="user-nav-list-item"><a href="#">Выйти</a></li>
-        <li class="user-nav-list-item"><a href="#">Сравнить</a></li>
-        <li class="user-nav-list-item"><a href="#">Корзина</a></li>
-      </ul>
-      <ul class="main-navigation">
+      <div class="user-navigation-wrapper">
+        <form class="main-search" method="GET" action="https://echo.htmlacademy.ru">
+          <input class="input-search" placeholder="Поиск по сайту" type="text" value="search">
+          <button class="button button-search" type="submit"></button>
+        </form>
+        <ul class="user-navigation">
+          <li class="user-navigation-item"><a href="#">Имя</a></li>
+          <li class="user-navigation-item"><a href="#">Войти</a></li>
+          <li class="user-navigation-item"><a href="#">Выйти</a></li>
+          <li class="user-navigation-item"><a href="#">Сравнить</a></li>
+          <li class="user-navigation-item"><a href="#">Корзина</a></li>
+        </ul>
+      </div>
+      <ul class="site-navigation">
         <li class="main-navigation-item"><a href="catalog.html">Каталог товаров</a>
           <ul class="submain-catalog">
             <li class="submain-catalog-item">
@@ -56,6 +58,29 @@
     </nav>
   </header>
   <main class="container">
+    <div class="slider">
+
+    </div>
+    <div class="popular">
+        <ul>
+          <li class="popular-item"><a href="#"></a>Виртуальная реальность</li>
+          <li class="popular-item"><a href="#"></a>Моноподы для селфи</li>
+          <li class="popular-item"><a href="#"></a>Экшн-камеры</li>
+          <li class="popular-item"><a href="#"></a>Фитнес-браслеты</li>
+          <li class="popular-item"><a href="#"></a>Умные часы</li>
+          <li class="popular-item"><a href="#"></a>Квадракоптер</li>
+        </ul>
+    </div>
+    <div class="services">
+
+    </div>
+    <div class="logotypes">
+        <ul>
+            <li class="logotypes-item"><a href="#"></a></li>
+            <li class="logotypes-item"><a href="#"></a></li>
+            <li class="logotypes-item"><a href="#"></a></li>
+          </ul>
+    </div>
     <section class="modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <p>
@@ -80,25 +105,25 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a class="btn-line-through" href="#">подробнее о нас</a>
+      <a class="btn-line-through" href="#"></a>
     </section>
     <section class="modal-writetous">
       <h2 class="visually-hidden">Напишите нам</h2>
       <button class="button-close"></button>
       <form method="POST" action="https://echo.htmlacademy.ru">
         <p class="">
-          <label for="client-name"></label>
+          <label for="client-name">Ваше имя:</label>
           <input id="client-name" type="text" name="" value="name" placeholder="Имя Фамилия">
         </p>
         <p class="">
-          <label for="client-mail"></label>
+          <label for="client-mail">Текст письма:</label>
           <input id="client-mail" type="text" name="" value="mail" placeholder="email@example.com">
         </p>
         <p class="">
-          <label for="client-letter"></label>
+          <label for="client-letter">Ваш e-mail:</label>
           <input id="client-letter" type="text" name="" value="letter" placeholder="В свободной форме">
         </p>
-        <button class="button" type="submit">отправить</button>
+        <button class="btn-line-through" type="submit">отправить</button>
       </form>
     </section>
     <section class="contacts">
@@ -115,7 +140,7 @@
   </main>
   <footer class="main-footer">
     <p class="contacts-footer">
-      <a class="main-header-logo" href="index.html">
+      <a class="footer-logo-main" href="index.html">
         <img src="img/svg/logo-yellow.svg" alt="Логотип Магазина DEVICE">
       </a>
       г. Москва, ул. Строителей, 15
@@ -127,9 +152,9 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="social-footer">
-        <li><a href="#"><img src="img/svg/insta.svg">facebook</a></li>
-        <li><a href="#"><img src="img/svg/twiter.svg">instagram</a></li>
-        <li><a href="#"><img src="img/svg/facebook.svg">Vconacte</a></li>
+        <li><a href="#"><img src="img/svg/insta.svg"></a></li>
+        <li><a href="#"><img src="img/svg/twiter.svg"></a></li>
+        <li><a href="#"><img src="img/svg/facebook.svg"></a></li>
       </ul>
     </div>
     <section class="user-menu-footer">
