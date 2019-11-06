@@ -184,7 +184,8 @@ li{
     font-weight: lighter;
 }
 .button-search{
-
+    border: none;
+    background: #f7e296;
 }
 
 .user-navigation a {
@@ -216,8 +217,8 @@ li{
 .site-navigation a:active {
     opacity: 0.3;
 }
-.user-navigation-item{
-
+.user-navigation-item:nth-child(n) span{
+    padding-right: 10px;
 }
 
 .main-navigation-item a {
@@ -234,6 +235,9 @@ li{
 }
 .main-navigation-item:hover .submain-catalog {
     display: flex;
+}
+.main-navigation-item:nth-child(1) span {
+    padding-left: 15px;
 }
 .submain-catalog-item a {
     font-family: 'Open Sans', sans-serif;
@@ -712,6 +716,9 @@ li{
     font-weight: lighter;
     letter-spacing: 0.5px;
     color: #ffffff;
+}
+.user-menu-footer:nth-child(n) span {
+    padding-right: 10px;
 }
 /* модальное окно*/
 .modal-map {
