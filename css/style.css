@@ -298,8 +298,20 @@ li{
 .popular-item:nth-child(1) span {
     padding: 52px 31px;
  }
- .popular-item:nth-child(1) span {
+ .popular-item:nth-child(2) span {
+    padding: 41px 39px;
+ }
+ .popular-item:nth-child(3) span {
+    padding: 37px 51px;
+ }
+ .popular-item:nth-child(4) span {
     padding: 52px 31px;
+ }
+ .popular-item:nth-child(5) span {
+    padding: 31px 58px;
+ }
+ .popular-item:nth-child(6) span {
+    padding: 49px 16px;
  }
 /*Cервис*/
 .services {
@@ -349,7 +361,7 @@ li{
   
   .services-tab {
     box-sizing: border-box;
-    display: block;
+    display: inline-block;
     padding: 20px 25px;
     color: #ffffff;
     text-decoration: none;
@@ -447,22 +459,20 @@ li{
 /*О нас*/
 .about-us {
    width: 600px;
-   position: relative;
-   align-self: start;
    list-style: none;
 }
-.about-us::before {
+.about-us h2::before {
     content: "";
     box-sizing: border-box;
     position: absolute;
-    left: 100%;
-    bottom: -23px;
-    width: 6px;
-    top:-30px;
+    height: 8px;
+    width: 83px;
+    top:-56px;
     background-color: #000;
 }
 .about-us h2 {
-
+    position: relative;
+    align-self: start;
     font-family: 'Gilroy', sans-serif;
     font-size: 47px;
     line-height: 48px;
@@ -490,7 +500,10 @@ li{
     list-style-type: circle;
 }
 .about-us a {
-    margin-left: 20px;
+    margin-left: 0px;
+    display: inline-block;
+    text-align: center;
+    width: 261px;
 } 
 
 /*Контакты*/
@@ -504,8 +517,18 @@ li{
     line-height: 48px;
     font-weight: bold;
     color: #000;
+    position: relative;
+    align-self: start;
 }
-
+.contacts h2::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    height: 8px;
+    width: 83px;
+    top:-56px;
+    background-color: #000;
+}
 .contacts p {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -519,7 +542,10 @@ li{
     
 }
 .contacts a {
-    margin-left: 40px;
+    margin-left: 5px;
+    display: inline-block;
+    text-align: center;
+    width: 254px;
 }
 
 /*Подвал*/
